@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif ;
+    font-size: 16px;
+}
+
+input:focus,
+button:focus {
+    outline: 0;
+}
+
+input:focus {
+    border: 2px solid hsl(0, 36%, 70%);
+}
+
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left {
+    background-image: url('./images/bg-pattern-desktop.svg');
+    background-size: cover;
+    background-position: center center;
+    width: 60%;
+    padding: 0 40px;
+} 
+
+.right {
+    width: 40%; 
+} 
+
+.inner-container {
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+.bg-image {
+    background-image: url('./images/hero-desktop.jpg');
+    background-size: cover;
+    background-position: center center;
+    z-index: 2;
+}
+
+.bg-mobile {
+    display: none;
+}
+
+.logo {
+    margin: 60px 0;
+    width: 200px;
+}
+
+.logo-mobile {
+    display: none;
+}
+
+h1 {
+    font-weight: 600;
+    letter-spacing: 20px;
+    font-size: 70px;
+    margin-bottom: 0;
+    /* opacity: 0;
+    transform: translateX(-100%); animation  */
+    text-transform: uppercase;
+    color: hsl(0, 6%, 24%);
+    line-height: 1.2;
+    /* animation: fadeIn 1s ease-in-out forwards; animation */
+} 
+
+h1 span {
+    color: hsl(0, 36%, 70%);
+    font-weight: 200;
+}
+
+p {
+    color: hsl(0, 36%, 70%);
+    line-height: 1.85;
+    margin: 40px 0 50px 0;
+    /* opacity: 0; animation */
+    /* transform: translateX(100%); animaiton */
+    font-size: 17px;
+    font-weight: 400;
+    z-index: 0;
+    /* animation: comeinright 0.5s ease-in-out forwards; animation */
+}
+
+form {
+    position: relative;
+    /* transform: translateX(-100%); animaiton
+    opacity: 0; animation
+    animation: comeinleft 0.5s ease-in-out forwards; animation */
+}
+
+
+input {
+    background-color: transparent;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 50px;
+    padding: 20px 30px;
+    width: 100%;
+    height: 65px;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: hsl(0, 19%, 77%);
+}
+
+form.error input {
+    border: 2px solid hsl(0, 19%, 77%);
+} 
+
+button {
+    background-image: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    border: none;
+    border-radius: 50px;
+    padding: 20px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    height: 65px;
+    width: 115px;
+    box-shadow: 0px 5px 20px hsla(0, 36%, 70%, 0.5);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.6;
+}
+
+.error-icon {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 130px;
+}
+
+form.error .error-icon {
+    display: block;
+}
+
+small {
+    color: hsl(0, 93%, 68%);
+    display: none;
+    margin-top: 15px;
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+form.error small {
+    display: block;
+}
+
+
+/* Animations */
+
+/* @keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes comeinleft {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes comeinright {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+} */
+
+
+/* media queries */
+
+@media (max-width: 800px) {
+
+    .logo-mobile {
+        display: block;
+        margin: 30px 0;
+        width: 150px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    .bg-mobile {
+        display: block;
+        margin-left: -40px;
+        margin-right: -40px;
+        width: calc(100% + 80px);
+    }
+
+    .right {
+        display: none;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    input {
+        margin-bottom: 100px;
+    }
+}
