@@ -3,7 +3,8 @@ const projects = [
     'intro-component-with-signup-form-master',
     'base-apparel-coming-soon',
     'single-price-grid-component-master',
-    'ping-coming-soon-page'
+    'ping-coming-soon-page',
+    'huddle-landing-page-with-alternating-feature-blocks-master'
 ];
 const list = document.getElementById('list');
 projects.forEach(project => {
