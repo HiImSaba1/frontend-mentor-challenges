@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght600display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  font-size: 1.15em;
+  color: hsl(192, 100%, 9%);
+}
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+p{
+    opacity: 0.7;
+}
+img {
+  max-width: 100%;
+}
+.header-img{
+    width: 80%;
+    margin-left: 20%;
+}
+.btn {
+  border-radius: 50px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border: none;
+  font-size: 1em;
+  padding: 15px 60px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.btn-primary {
+  background-color: hsl(322, 100%, 66%);
+  color: #fff;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex > div, .flex > ul {
+  flex: 1;
+}
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1000px;
+}
+.center {
+  text-align: center;
+}
+header {
+  background-image: url("./images/bg-hero-desktop.svg");
+  background-size: cover;
+  background-position: center center;
+  background-color: hsl(193, 100%, 96%);
+  padding: 40px 0;
+}
+nav {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.box {
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  margin: 20px 0;
+  padding: 60px;
+}
+.box img {
+  width: 80%;
+}
+.small-box {
+  display: inline-block;
+  position: relative;
+  margin-bottom: -50%;
+  z-index: 1;
+}
+footer {
+  background-color: hsl(192, 100%, 9%);
+  color: #fff;
+  padding: 180px 0 60px;
+  position: relative;
+}
+footer .links-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul li {
+  margin-bottom: 20px;
+}
+.align-start {
+  align-items: flex-start;
+}
+footer .circle {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+footer p {
+  text-align: right;
+}
+@media screen and (max-width: 768px){
+    body{
+        text-align: center;
+    }
+    .header-img{
+        margin-top: 40px;
+        margin-left: 0;
+        width: 100%;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    nav.flex{
+        flex-direction: row;
+    }
+    .box-reverse{
+        flex-direction: column-reverse;
+    }
+    footer ul{
+        padding: 0;
+        width: 100%;
+    }
+    footer p{
+        text-align: center;
+    }
+}
