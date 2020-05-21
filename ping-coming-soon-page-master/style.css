@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Libre Franklin', sans-serif;
+}
+main{
+    text-align: center;
+    margin: 60px auto;
+    max-width: 650px;
+    padding: 20px;
+}
+h1 {
+    font-weight: 300;
+    font-size: 50px;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 10px;
+}
+h1 strong{
+    color: hsl(209, 33%, 12%);
+}
+h2 {
+    font-weight: 300;
+    color: hsl(209, 33%, 12%);
+}
+form {
+    margin-top: 50px;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+}
+form small{
+    color: hsl(354, 100%, 66%);
+    display: none;
+    font-style: italic;
+    z-index: 10;
+    margin: 0 20px 40px;
+}
+.form-left{
+    flex: .7;
+}
+input{
+    padding: 20px 25px;
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 50px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: .9em;
+    margin-bottom: 15px;
+    width: 100%;
+}
+input::placeholder{
+    color: hsl(223, 100%, 88%);
+}
+input.error{
+    border-color: hsl(354, 100%, 66%);
+}
+input.error::placeholder{
+    color: hsl(354, 100%, 66%);
+}
+button {
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+    color: lavender;
+    padding: 20px 0;
+    border-radius: 50px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 20px;
+    box-shadow: 0 10px 10px hsla(223, 100%, 88% , .8);
+    cursor: pointer;
+    flex: .3;
+}
+button:hover{
+    opacity: .8;
+    transform: scale(1.05);
+}
+
+.illustration {
+    max-width: 650px;
+    margin: 60px 0;
+}
+.social{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+.social li {
+    margin: 10px;
+}
+.social li a{
+    border: 1px solid hsl(0, 7%, 89%);
+    border-radius: 50%;
+    font-size: 18px;
+
+    color: hsl(223, 87%, 63%);
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.social li a:hover{
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+}
+footer {
+    color: hsl(0, 0%, 59%);
+}
+@media screen and (max-width: 650px){
+    form{
+        flex-direction: column;
+        text-align: center;
+    }
+    .form-left{
+        flex: 1;
+        width: 100%;
+    }
+    button{
+        flex: 1;
+        margin-left: 0;
+        width: 100%;
+    }
+}
