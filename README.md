@@ -14,3 +14,5 @@ Copy or Clone the project -> drop the folder into your VS Code or what you use -
 Copy or Clone the project -> drop the folder into your VS Code or what you use -> Open index.html with Live Server -> Enjoy!
 # huddle-landing-page-with-single-introductory-section-master
 Copy or Clone the project -> drop the folder into your VS Code or what you use -> Open index.html with Live Server -> Enjoy!
+# fylo-landing-page-with-two-column-layout-master
+Copy or Clone the project -> drop the folder into your VS Code or what you use -> Open index.html with Live Server -> Enjoy!
