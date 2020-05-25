@@ -24,3 +24,5 @@ Copy or Clone the project -> drop the folder into your VS Code or what you use -
 Copy or Clone the project -> drop the folder into your VS Code or what you use -> Open index.html with Live Server -> Enjoy!
 # clipboard-landing-page-master
 Copy or Clone the project -> drop the folder into your VS Code or what you use -> Open index.html with Live Server -> Enjoy!
+# job-listing-react-app
+Copy or Clone the project -> drop the folder into your VS Code or what you use -> Open index.html with Live Server -> Enjoy!
