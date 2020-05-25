@@ -18,3 +18,7 @@ Copy or Clone the project -> drop the folder into your VS Code or what you use -
 Copy or Clone the project -> drop the folder into your VS Code or what you use -> Open index.html with Live Server -> Enjoy!
 # insure-landing-page-master
 Copy or Clone the project -> drop the folder into your VS Code or what you use -> Open index.html with Live Server -> Enjoy!
+# pricing-component-with-toggle-master
+Copy or Clone the project -> drop the folder into your VS Code or what you use -> Open index.html with Live Server -> Enjoy!
+# project-tracking-intro-component-master
+Copy or Clone the project -> drop the folder into your VS Code or what you use -> Open index.html with Live Server -> Enjoy!
