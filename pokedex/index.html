@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label class="poke_label">Lavender Town Audio</label>
+    <audio class="poke_audio" controls>
+      <source
+        src="https://vgmdownloads.com/soundtracks/pokemon-gameboy-sound-collection/etaiukwo/123-vermillion%20city%27s%20theme.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+    <h1>PokeDex</h1>
+    <div id="poke_container" class="poke-container"></div>
+
+    <!-- SOCIAL PANEL HTML -->
+    <div class="social-panel-container">
+      <div class="social-panel">
+        <p>
+          Created with <i class="fa fa-heart"></i> by
+          <a target="_blank" href="https://florin-pop.com">Florin Pop</a>
+        </p>
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+        <h4>Get in touch on</h4>
+        <ul>
+          <li>
+            <a href="https://twitter.com/florinpop1705" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/florinpop17" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com/florinpop17" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/florinpop17" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button class="floating-btn">
+      Get in Touch
+    </button>
+
+    <div class="floating-text">
+      Part of
+      <a
+        href="https://florin-pop.com/blog/2019/09/100-days-100-projects"
+        target="_blank"
+        >#100Days100Projects</a
+      >
+    </div>
+  </body>
+  <script>
+    const poke_container = document.getElementById("poke_container");
+    const pokemons_number = 150;
+    const colors = {
+      fire: "#FDDFDF",
+      grass: "#DEFDE0",
+      electric: "#FCF7DE",
+      water: "#DEF3FD",
+      ground: "#f4e7da",
+      rock: "#d5d5d4",
+      fairy: "#fceaff",
+      poison: "#98d7a5",
+      bug: "#f8d5a3",
+      dragon: "#97b3e6",
+      psychic: "#eaeda1",
+      flying: "#F5F5F5",
+      fighting: "#E6E0D4",
+      normal: "#F5F5F5",
+    };
+    const main_types = Object.keys(colors);
+
+    const fetchPokemons = async () => {
+      for (let i = 1; i <= pokemons_number; i++) {
+        await getPokemon(i);
+      }
+    };
+
+    const getPokemon = async (id) => {
+      const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+      const res = await fetch(url);
+      const pokemon = await res.json();
+      createPokemonCard(pokemon);
+    };
+
+    function createPokemonCard(pokemon) {
+      const pokemonEl = document.createElement("div");
+      pokemonEl.classList.add("pokemon");
+
+      const poke_types = pokemon.types.map((type) => type.type.name);
+      const type = main_types.find((type) => poke_types.indexOf(type) > -1);
+      const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
+      const color = colors[type];
+
+      pokemonEl.style.backgroundColor = color;
+      const pokeInnerHTML = `
+ <div class="img-container">
+<img src="https://pokeres.bastionbot.org/images/pokemon/${
+        pokemon.id
+      }.png" alt="${name}" /></div>
+<div class="info">
+<span class="number">#${pokemon.id.toString().padStart(3, "0")}</span>
+<h3 class="name">${name}</h3>
+<small class="type">Type: <span>${type}</span></small></div>`;
+
+      pokemonEl.innerHTML = pokeInnerHTML;
+
+      poke_container.appendChild(pokemonEl);
+    }
+
+    fetchPokemons();
+
+    // SOCIAL PANEL JS
+    const floating_btn = document.querySelector(".floating-btn");
+    const close_btn = document.querySelector(".close-btn");
+    const social_panel_container = document.querySelector(
+      ".social-panel-container"
+    );
+
+    floating_btn.addEventListener("click", () => {
+      social_panel_container.classList.toggle("visible");
+    });
+
+    close_btn.addEventListener("click", () => {
+      social_panel_container.classList.remove("visible");
+    });
+  </script>
+</html>
