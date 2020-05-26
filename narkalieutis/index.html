@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impossible MineSweeper</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="boxhead">
+        <h1>Mine Sweeper Game</h1>
+        <p>No. Of Bombs : 9</p>
+      </div>
+      <div class="mainBody"></div>
+    </div>
+    <script>
+      var totalClicks = 0;
+      for (var i = 1; i <= 81; i++) {
+        document.querySelector(
+          ".mainBody"
+        ).innerHTML += box = `<div class="box b${i}"></div>`;
+      }
+      var arr = [];
+      for (var i = 1; i <= 10; i++) {
+        var rand = Math.floor(Math.random() * 81);
+        if (arr.indexOf(rand) == -1 && rand > 0) {
+          arr.push(rand);
+        }
+        arr.forEach(el => {
+          document.querySelector(
+            `.b${el}`
+          ).innerHTML = `<div class="blacko"></div>`;
+        });
+      }
+      var boxes = document.querySelectorAll(".box");
+      boxes.forEach(el => {
+        el.addEventListener("click", () => {
+          if (totalClicks >= 81) {
+            alert("You Won!");
+          } else {
+            totalClicks++;
+          }
+          if (el.childElementCount > 0) {
+            el.children[0].style.display = "block";
+            alert("You Lost");
+            location.reload();
+          } else {
+            el.style.backgroundColor = "green";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
