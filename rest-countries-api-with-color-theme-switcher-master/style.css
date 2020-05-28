@@ -19,7 +19,7 @@ body {
 body.dark {
   color: hsl(0, 0%, 100%);
   --body: hsl(207, 26%, 17%);
-  --background-el: hsl(209, 23%, 22%);
+  --background-el: hsl(207, 26%, 26%);
 }
 
 header {
