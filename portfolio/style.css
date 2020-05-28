@@ -291,7 +291,7 @@ p {
   flex-direction: column;
   padding: 30px;
   border-radius: 10px;
-  background-image: url(./img/img-1.png);
+  background-image: url(./img/fe-dev.jpg);
   background-size: cover;
   margin: 10px 5%;
   position: relative;
@@ -305,7 +305,7 @@ p {
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background-image: linear-gradient(60deg, #252525 0%, #7089a3 100%);
   opacity: 0.9;
   z-index: -1;
 }
@@ -396,7 +396,7 @@ p {
   transition: 0.3s ease transform;
 }
 #projects .project-item:hover .project-img img {
-  transform: scale(1.1);
+  transform: scale(0.97);
 }
 /* End Projects section */
 
@@ -687,7 +687,7 @@ p {
     display: inline-block;
   }
   #header .nav-list ul li a {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   #header .nav-list ul a:after {
     display: none;
