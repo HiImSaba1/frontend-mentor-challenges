@@ -353,7 +353,7 @@ p {
   border-radius: 10px;
 }
 #projects .project-info {
-  padding: 30px;
+  padding: 70px;
   flex-basis: 50%;
   height: 100%;
   display: flex;
@@ -369,8 +369,8 @@ p {
 }
 #projects .project-info h2 {
   font-size: 1.8rem;
-  font-weight: 500;
-  margin-top: 10px;
+  font-weight: 400;
+  margin: 10px 0 10px 0;
 }
 #projects .project-info p {
   color: white;
@@ -381,6 +381,7 @@ p {
   overflow: hidden;
   position: relative;
 }
+
 #projects .project-img:after {
   content: "";
   position: absolute;
