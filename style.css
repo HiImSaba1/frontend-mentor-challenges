@@ -1,82 +1,23 @@
-.header-item {
-  display: flex;
-  flex-direction: column;
-  margin: 20px auto;
-  overflow: hidden;
-  border-radius: 10px;
+ .brand h1 {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  color: black ;
+  margin-left: 10px;
 }
-.header-info {
-  padding: 70px;
-  flex-basis: 50%;
-  height: 100%;
-  width: 100%;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 80%);
-  color: white;
-}
-.header-info h1 {
-  font-size: 4rem;
-  font-weight: 500;
-}
-.header-info h2 {
-  font-size: 1.8rem;
-  font-weight: 400;
-  margin: 10px 0 10px 0;
-}
-.header-info p {
-  color: white;
-}
-.project-item {
-  display: flex;
-  flex-direction: column;
-  margin: 20px auto;
-  overflow: hidden;
-  border-radius: 10px;
-}
-.project-info {
-  padding: 70px;
-  flex-basis: 50%;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 80%);
-  color: white;
-}
-.project-info h1 {
-  font-size: 4rem;
-  font-weight: 500;
-}
-.project-info h2 {
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin: 10px 0 10px 0;
-}
-.project-info p {
-font-size: 1.3rem;
-color: white;
-}
-.project-img {
-  flex-basis: 50%;
-  height: 300px;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
+.brand h1 span {
+  color: crimson;
 }
 
-.project-img:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0.6;
+.light-bg{
+  background: #f7eded;
 }
-.project-img img {
-  transition: 0.3s ease transform;
+.relative{
+  position: relative;
+}
+.watermark{
+  position: absolute;
+  font-size: 25em;
+  white-space: wrap;
+  font-family: 'Times New Roman', Times, serif;
+  opacity: .05;
 }
