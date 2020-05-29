@@ -1,23 +1,26 @@
- .brand h1 {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.brand h1 {
   font-size: 1.4em;
   text-transform: uppercase;
-  color: black ;
+  color: black;
   margin-left: 10px;
 }
 .brand h1 span {
   color: crimson;
 }
 
-.light-bg{
+.light-bg {
   background: #f7eded;
 }
-.relative{
+.relative {
   position: relative;
 }
-.watermark{
-  position: absolute;
-  font-size: 25em;
-  white-space: wrap;
-  font-family: 'Times New Roman', Times, serif;
-  opacity: .05;
-}
+
