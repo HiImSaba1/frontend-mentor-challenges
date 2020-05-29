@@ -6,7 +6,10 @@
 html {
   scroll-behavior: smooth;
 }
-
+b{
+  letter-spacing: 1px;
+  font-size: 1.1em;
+}
 .brand h1 {
   font-size: 1.4em;
   text-transform: uppercase;
