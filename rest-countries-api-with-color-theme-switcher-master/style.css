@@ -120,7 +120,10 @@ body.dark .btn-toggle .far {
 .dropdown.open ul {
   display: block;
 }
-
+.dropdown.open ul li:hover {
+  background-color: hsla(200, 100%, 41%, 0.288);
+  box-shadow: 0 3px 3px hsla(200, 100%, 41%, 0.171);
+}
 .dropdown ul li {
   margin: 10px 0;
 }
