@@ -7,7 +7,7 @@
 html {
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
-  scroll-behavior: smooth;
+  scroll-behavior: initial;
 }
 a {
   text-decoration: none;
@@ -228,7 +228,7 @@ p {
   display: block;
   width: fit-content;
   font-size: 4rem;
-  position: relative; 
+  position: relative;
   color: transparent;
   animation: text_reveal 0.5s ease forwards;
   animation-delay: 1s;
@@ -262,7 +262,7 @@ p {
 #hero h1:nth-child(3) span {
   animation-delay: 2.5s;
 }
-#hero .hero-parag{
+#hero .hero-parag {
   color: #fff;
   font-size: 4em;
   line-height: 50px;
@@ -317,11 +317,11 @@ p {
   z-index: -1;
 }
 /* MODAL */
-button{
+button {
   font-weight: 400;
   font-family: inherit;
 }
-button:focus{
+button:focus {
   outline: none;
 }
 .modal {
@@ -333,10 +333,10 @@ button:focus{
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
-  transform: scale(.9);
+  transform: scale(0.9);
   transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
-.modal img{
+.modal img {
   border-radius: 5px;
 }
 .modal-content {
@@ -349,9 +349,8 @@ button:focus{
   height: auto;
   border-radius: 5px;
   padding: 20px;
-  margin-top:20px;
+  margin-top: 20px;
   z-index: 100;
-  
 }
 
 .close-button {
@@ -365,7 +364,7 @@ button:focus{
   border-radius: 5px;
   background-color: lightgray;
   font-weight: 800;
-  margin:30px 0 10px 0;
+  margin: 30px 0 10px 0;
 }
 .close-button:hover {
   background-color: darkgray;
@@ -373,7 +372,7 @@ button:focus{
 .show-modal {
   opacity: 1;
   visibility: visible;
-  transform: scale(1.0);
+  transform: scale(1);
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 /* End About Section */
@@ -516,7 +515,6 @@ button:focus{
 }
 /* End Projects section */
 
-
 /* contact Section */
 #contact .contact {
   flex-direction: column;
@@ -633,7 +631,52 @@ button:focus{
   }
 }
 /* End Keyframes */
-
+/* Media Query For Mobile */
+@media only screen and (max-width: 600px) {
+  #hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 2.3rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal 0.5s ease forwards;
+    animation-delay: 1s;
+    line-height: 30px;
+    letter-spacing: .8px;
+  }
+  #hero .hero-parag {
+    color: #fff;
+    font-size: 2.7rem;
+    line-height: 35px;
+    padding: 50px 0 50px 0;
+    letter-spacing: 1px;
+  }
+  .cta  {
+    display: flow-root;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease;
+    transition-property: background-color, color;
+  }
+  button{
+    text-align: center;
+    width: 92%;
+    padding: 20px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+}
+/* End  Media Query For Mobile */
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
   .cta {
@@ -769,7 +812,7 @@ button:focus{
     margin: 1.5%;
   }
 }
-.cta{
+.cta {
   margin: auto 30px auto auto;
   padding-right: 20px;
   text-align: center;
