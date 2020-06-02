@@ -633,6 +633,9 @@ button:focus {
 /* End Keyframes */
 /* Media Query For Mobile */
 @media only screen and (max-width: 600px) {
+  *{
+    overflow-x: hidden;
+  }
   #hero h1 {
     display: block;
     width: fit-content;
