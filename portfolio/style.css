@@ -321,6 +321,9 @@ button{
   font-weight: 400;
   font-family: inherit;
 }
+button:focus{
+  outline: none;
+}
 .modal {
   position: fixed;
   left: 0;
