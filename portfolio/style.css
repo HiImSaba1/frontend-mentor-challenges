@@ -9,6 +9,10 @@ html {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: initial;
 }
+main {
+  overflow-x: hidden;
+  width: 100%;
+}
 a {
   text-decoration: none;
 }
@@ -373,7 +377,7 @@ button:focus {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
-  transition:  0s linear 0s,  0.25s 0s,  0.25s;
+  transition: 0s linear 0s, 0.25s 0s, 0.25s;
 }
 /* End About Section */
 
@@ -633,7 +637,7 @@ button:focus {
 /* End Keyframes */
 /* Media Query For Mobile */
 @media only screen and (max-width: 600px) {
-  .nav-bar{
+  .nav-bar {
     margin: 10px 0 0 15px;
     transition: 1.2s ease;
   }
@@ -648,7 +652,7 @@ button:focus {
     letter-spacing: 1px;
     line-height: 30px;
   }
-  #hero h1:nth-child(1){
+  #hero h1:nth-child(1) {
     padding-top: 50px;
   }
   #hero .hero-parag {
@@ -658,14 +662,14 @@ button:focus {
     padding: 30px 0 20px 0;
     letter-spacing: 1px;
   }
-  .cta  {
+  .cta {
     display: flow-root;
   }
   a.cta {
     padding: 15px;
     margin: 20px 0 10px 0;
-}
-   button{
+  }
+  button {
     text-align: center;
     width: 100%;
     padding: 20px;
@@ -688,7 +692,7 @@ button:focus {
   h1.section-title {
     font-size: 6rem;
   }
-  
+
   /* Hero */
   #hero h1 {
     font-size: 4rem;
