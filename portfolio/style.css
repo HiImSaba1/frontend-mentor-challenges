@@ -683,10 +683,30 @@ button:focus {
 /* End  Media Query For Mobile */
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
+  .nav-bar {
+    margin: 10px 0 0 15px;
+    transition: 1.2s ease;
+  }
   .cta {
     font-size: 2.5rem;
     padding: 20px 20px;
     text-align: center;
+    display: flow-root;
+  }
+  a.cta {
+    padding: 15px;
+    margin: 20px 0 10px 0;
+  }
+  button {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
   }
   h1.section-title {
     font-size: 6rem;
@@ -748,6 +768,7 @@ button:focus {
   }
   #about .col-right h1 {
     text-align: left;
+    font-size: 5.5em;
   }
   /* End About */
 
@@ -790,6 +811,7 @@ button:focus {
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
   /* header */
+  
   #header .hamburger {
     display: none;
   }
