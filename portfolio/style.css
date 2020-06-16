@@ -409,8 +409,6 @@ button:focus {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  background-image: url(./img/skills-3.jpg);
-  background-size: cover;
   padding: 30px;
   border-radius: 10px;
   margin: 10px 5%;
@@ -418,7 +416,18 @@ button:focus {
   z-index: 1;
   overflow: hidden;
 }
-
+#services .service-item:nth-child(1) {
+  background-image: url(./img/skills-1.jpg);
+  background-size: cover;
+}
+#services .service-item:nth-child(2) {
+  background-image: url(./img/skills-2.png);
+  background-size: cover;
+}
+#services .service-item:nth-child(3) {
+  background-image: url(./img/skills-3.jpg);
+  background-size: cover;
+}
 #services .service-item::after {
   content: "";
   position: absolute;
