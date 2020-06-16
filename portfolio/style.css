@@ -449,6 +449,7 @@ button:focus {
   color: white;
   margin-bottom: 10px;
   text-transform: uppercase;
+  text-align: left;
 }
 #services .service-item p {
   color: white;
