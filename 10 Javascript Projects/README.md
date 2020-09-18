@@ -1,7 +1,5 @@
 ## Coding Challenge - 10 JavaScript Projects 
 
-You can find the projects [here](https://10projects1hour.netlify.app/).
-
 1. Hamburger Button
 
 -   button + hamburger icon
